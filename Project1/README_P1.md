@@ -7,11 +7,12 @@
 ## Reinforcement Learning Environment
 
 For this project, an agent was trained using the DQN and Double DQN algorithm to navigate (and collect bananas!) in a large, square world. 
+
 The environment is a precompiled unity task which can be downloaded from :
-    - Linux: [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Linux.zip) 
-    - Mac OSX: [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana.app.zip) 
-    - Windows (32-bit): [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Windows_x86.zip) 
-    - Windows (64-bit): [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Windows_x86_64.zip) 
+- Linux: [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Linux.zip) 
+- Mac OSX: [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana.app.zip) 
+- Windows (32-bit): [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Windows_x86.zip) 
+- Windows (64-bit): [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Windows_x86_64.zip) 
 
 ![Trained Agent][image1]
 
@@ -40,4 +41,4 @@ The training algorithm (DQN or Double DQN) can be specified by passing the argum
 Using this implementation the task was solved in just 398 episodes using DQN and 392 episodes using Double DQN.
 For comparison, the benchmark implementation provided by Udacity solves it in 1800 episodes. 
 Please check the `Report_RS.pdf` for more information. 
-
+The model weights are provided in checkpoint.pth
