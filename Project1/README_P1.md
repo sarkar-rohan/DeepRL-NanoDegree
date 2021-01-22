@@ -38,7 +38,7 @@ Follow the instructions in `Navigation_RS.ipynb` to train the agent.
 The training algorithm (DQN or Double DQN) can be specified by passing the argument "DQN" or "DDQN" while instantiating the Agent.
 
 ## Results
-Using this implementation the task was solved in just 398 episodes using DQN and 392 episodes using Double DQN.
+- Using this implementation the task was solved in just 398 episodes using DQN and 392 episodes using Double DQN.
 For comparison, the benchmark implementation provided by Udacity solves it in 1800 episodes. 
-Please check the `Report_RS.pdf` for more information. 
-The model weights are provided in checkpoint.pth
+- Please check the `Report_RS.pdf` for more information. 
+- The model weights are provided in checkpoint.pth
