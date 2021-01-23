@@ -31,6 +31,11 @@ Four discrete actions are available, corresponding to:
 
 ### Criterion for solving the task
 The task is episodic, and in order to solve the environment, your agent must get an average score of +13 over 100 consecutive episodes.
+## Setup 
+My code is run in the Udacity workspace. All the necessary requirements are installed by running the first cell in the jupyter notebook:
+!pip -q install ./python
+
+This installs the dependencies mentioned in requirements.txt file. 
 
 ## Instructions
 
