@@ -35,7 +35,8 @@ The task is episodic, and in order to solve the environment, your agent must get
 My code is run in the Udacity workspace. All the necessary requirements are installed by running the first cell in the jupyter notebook:
 !pip -q install ./python
 
-This installs the dependencies mentioned in requirements.txt file. 
+This installs the dependencies mentioned in requirements.txt file. For setting this up on a local machine, please follow the instructions at 
+[click here](https://github.com/udacity/deep-reinforcement-learning)
 
 ## Instructions
 
