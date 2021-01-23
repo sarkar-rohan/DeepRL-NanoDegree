@@ -35,7 +35,9 @@ The task is episodic, and in order to solve the environment, your agent must get
 ## Instructions
 
 Follow the instructions in `Navigation_RS.ipynb` to train the agent.
-The training algorithm (DQN or Double DQN) can be specified by passing the argument "DQN" or "DDQN" while instantiating the Agent.
+The training algorithm (DQN or Double DQN) can be specified by passing the argument "DQN" or "DDQN" while instantiating the Agent, as mentioned below: 
+- agent = Agent(state_size, action_size, seed, "DQN")
+- agent = Agent(state_size, action_size, seed, "DDQN") 
 
 ## Results
 - Using this implementation the task was solved in just 398 episodes using DQN and 392 episodes using Double DQN.
