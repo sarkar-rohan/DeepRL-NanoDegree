@@ -5,8 +5,8 @@
 # Project 2: Continuous Control
 
 ## Reinforcement Learning Environment
-
-For this project, an agent was trained using the DDPG algorithm. 
+For this task we will be using the Reacher environment which has a double-jointed obotic arm that should move to target locations shown by the blue spheres. The goal of the agent is to maintain the position of the end-effector at the target location for as long as possible.
+The agent was trained using the DDPG algorithm. 
 
 The environment is a precompiled unity task which can be downloaded from :
 - Linux: [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Linux.zip) 
@@ -30,7 +30,7 @@ Four discrete actions are available, corresponding to:
 - **`3`** - turn right.
 
 ### Criterion for solving the task
-The task is episodic, and in order to solve the environment, your agent must get an average score of +13 over 100 consecutive episodes.
+The task is episodic, and in order to solve the environment, the agent must get an average score of +30 over 100 consecutive episodes.
 ## Setup 
 My code is run in the Udacity workspace. All the necessary requirements are installed by running the first cell in the jupyter notebook:
 !pip -q install ./python
