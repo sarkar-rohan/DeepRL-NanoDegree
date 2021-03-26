@@ -17,17 +17,13 @@ The environment is a precompiled unity task which can be downloaded from :
 ![Trained Agent][image1]
 
 ### Rewards
-A reward of +1 is provided for collecting a yellow banana, and a reward of -1 is provided for collecting a blue banana.  Thus, the goal of your agent is to collect as many yellow bananas as possible while avoiding blue bananas.  
+A reward of +0.1 is provided for each time-step that the agent is able to hold the end-effector in the target ocation. Thus, the goal of the agent is to hold the hand at the target location for the maximum possible duration.  
 
 ### Continuous State Space
-The state space has 37 dimensions and contains the agent's velocity, along with ray-based perception of objects around agent's forward direction.  
+The state space has 33 dimensions and contains information related to the position, rotation, velocity and angular velocities of all the joints of the arm.
 
-### Discrete Action Space
-Four discrete actions are available, corresponding to:
-- **`0`** - move forward.
-- **`1`** - move backward.
-- **`2`** - turn left.
-- **`3`** - turn right.
+### Continuous Action Space
+The action space is represented by a four dimensional vector with information related to the torque to be applied to the two joints of the arm for holding the end-effector at the target location. 
 
 ### Criterion for solving the task
 The task is episodic, and in order to solve the environment, the agent must get an average score of +30 over 100 consecutive episodes.
