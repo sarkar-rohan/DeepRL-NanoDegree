@@ -53,5 +53,5 @@ Please follow the instructions in `Report.ipynb` to train the agent.
 - The DDPG agent is defined in Section 4.4 and trained in Section 4.5.
 
 ## Results
-- Using this implementation, the task was solved in just 1121 episodes. The plot of rewards vs number of episodes is provided in Section 5.
-- The actor and critic model weights are provided as `DDPG_actor_single.pth` and `DDPG_critic_single.pth`. 
+- Using this implementation, the task was solved in just 961 episodes. The plot of rewards vs number of episodes is provided in Section 5.
+- The actor and critic model weights are provided as `DDPG_Actor.pth` and `DDPG_Critic.pth`. 
