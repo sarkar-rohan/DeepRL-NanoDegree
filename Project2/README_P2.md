@@ -9,6 +9,7 @@ For this task we will be using the Reacher environment which has a double-jointe
 The agent was trained using the DDPG algorithm. 
 
 The environment is a precompiled unity task which can be downloaded from :
+
 Version 1: One agent
 
 - Linux: [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/one_agent/Reacher_Linux.zip)
@@ -40,15 +41,15 @@ The task is episodic, and in order to solve the environment, the agent must get 
 My code is run in the Udacity workspace. All the necessary requirements are installed by running the first cell in the jupyter notebook:
 !pip -q install ./python
 
-This installs the dependencies mentioned in requirements.txt file. For setting this up on a local machine, please follow the instructions at 
-[click here](https://github.com/udacity/deep-reinforcement-learning)
+Running all the cells in Section `1. Starting the Environment` installs all the dependencies and loads the necessary software libraries and modules. 
+For setting this up on a local machine, please follow the instructions at [click here](https://github.com/udacity/deep-reinforcement-learning)
 
 ## Instructions
 
-Follow the instructions in `Navigation_RS.ipynb` to train the agent.
-The training algorithm (DQN or Double DQN) can be specified by passing the argument "DQN" or "DDQN" while instantiating the Agent, as mentioned below: 
-- agent = Agent(state_size, action_size, seed, "DQN")
-- agent = Agent(state_size, action_size, seed, "DDQN") 
+Please follow the instructions in `Report.ipynb` to train the agent. 
+- Once the environment is setup, the continuous state and action space can 
+- The Actor-Critic Network 
+The training code is mentioned in 
 
 ## Results
 - Using this implementation the task was solved in just 398 episodes using DQN and 392 episodes using Double DQN.
