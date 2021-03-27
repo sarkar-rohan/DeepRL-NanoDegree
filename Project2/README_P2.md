@@ -41,18 +41,17 @@ The task is episodic, and in order to solve the environment, the agent must get 
 My code is run in the Udacity workspace. All the necessary requirements are installed by running the first cell in the jupyter notebook:
 !pip -q install ./python
 
-Running all the cells in Section `1. Starting the Environment` installs all the dependencies and loads the necessary software libraries and modules. 
+Section `1. Starting the Environment`, installs all the dependencies and loads the necessary software libraries and modules. 
 For setting this up on a local machine, please follow the instructions at [click here](https://github.com/udacity/deep-reinforcement-learning)
 
 ## Instructions
 
 Please follow the instructions in `Report.ipynb` to train the agent. 
-- Once the environment is setup, the continuous state and action space can 
-- The Actor-Critic Network 
-The training code is mentioned in 
+- Once the environment is setup, the continuous state and action space can be examined in Section 2 and 3.
+- The hyper-parameters for the DDPG algorithm is provided in Section 4.1.
+- The Actor-Critic Network Architecture is defined in Section 4.2 and the Replay Memory in Section 4.3.
+- The DDPG agent is defined in Section 4.4 and trained in Section 4.5.
 
 ## Results
-- Using this implementation the task was solved in just 398 episodes using DQN and 392 episodes using Double DQN.
-For comparison, the benchmark implementation provided by Udacity solves it in 1800 episodes. 
-- Please check the `Report_RS.pdf` for more information. 
-- The model weights are provided in checkpoint.pth
+- Using this implementation the task was solved in just 1347 episodes. The plot of rewards vs number of episodes is provided in Section 5.
+- The actor and critic model weights are provided as `DDPG_actor_single.pth` and `DDPG_critic_single.pth`. 
