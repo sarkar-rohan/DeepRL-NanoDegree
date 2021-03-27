@@ -5,7 +5,7 @@
 # Project 2: Continuous Control
 
 ## Reinforcement Learning Environment
-For this task we will be using the Reacher environment which has a double-jointed robotic arm that should move to target locations shown by the green spheres. The goal of the agent is to maintain the position of the end-effector at the target location for as long as possible.
+For this task we will be using the [Reacher](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Learning-Environment-Examples.md#reacher) environment which has a double-jointed robotic arm that should move to target locations shown by the green spheres. The goal of the agent is to maintain the position of the end-effector at the target location for as long as possible.
 The agent is trained using the DDPG algorithm. 
 
 The environment is a precompiled unity task which can be downloaded from :
