@@ -27,7 +27,7 @@ Version 2: Twenty agents
 ![Trained Agent][image1]
 
 ### Rewards
-A reward of +0.1 is provided for each time-step that the agent is able to hold the end-effector in the target ocation. Thus, the goal of the agent is to hold the hand at the target location for the maximum possible duration.  
+A reward of +0.1 is provided for each time-step that the agent is able to hold the end-effector in the target location. Thus, the goal of the agent is to hold the hand at the target location for the maximum possible duration.  
 
 ### Continuous State Space
 The state space has 33 dimensions and contains information related to the position, rotation, velocity and angular velocities of all the joints of the arm.
@@ -53,5 +53,5 @@ Please follow the instructions in `Report.ipynb` to train the agent.
 - The DDPG agent is defined in Section 4.4 and trained in Section 4.5.
 
 ## Results
-- Using this implementation the task was solved in just 1121 episodes. The plot of rewards vs number of episodes is provided in Section 5.
+- Using this implementation, the task was solved in just 1121 episodes. The plot of rewards vs number of episodes is provided in Section 5.
 - The actor and critic model weights are provided as `DDPG_actor_single.pth` and `DDPG_critic_single.pth`. 
