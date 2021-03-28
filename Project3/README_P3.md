@@ -15,7 +15,6 @@ The agent is trained using the DDPG algorithm which can easily be adapted for th
 The following points describe the rationale behind this: 
 - each of the two agents use the same actor network and receives its own local observation
 - the experience of each agent is added to a shared replay buffer from which mini-batches of experiences are sampled for training
-- the rewards collected for both the agents in an episode is roughly the same. 
 
 The environment is a precompiled unity task which can be downloaded from :
 
