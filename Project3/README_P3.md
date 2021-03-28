@@ -10,13 +10,13 @@
 ![Trained Agent][image1]
 
 For this task we will be using the [Tennis](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Learning-Environment-Examples.md#tennis) environment which has two agents control rackets to bounce a ball over a net. The goal of the agent is to keep the ball in play for as long as possible.
-The agent is trained using the DDPG algorithm which can be adapted for this collaborative task because of the following:
+The agent is trained using the DDPG algorithm which can easily be adapted for this collaborative task by simultaneously training both agents through self-play.
 
+The following points describe the rationale behind this: 
 - each of the two agents uses the same actor network and receives its own local observation
 - the experience of each agent is added to a shared replay buffer from which mini-batches of experiences are sampled for training
 - the reward for both the agents is the maximum of the rewards collected by each of the agents, which signifies the maximum time the ball was in play.
 
-It is for these reasons that the DDPG algorithm can easily be adapted to simultaneously train both agents through self-play.
 
 
 
