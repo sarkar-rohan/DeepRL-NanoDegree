@@ -8,16 +8,22 @@
 
 ## Reinforcement Learning Environment
 For this task we will be using the [Tennis](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Learning-Environment-Examples.md#tennis) environment which has two agents control rackets to bounce a ball over a net. The goal of the agent is to keep the ball in play for as long as possible.
-The agent is trained using the DDPG algorithm. 
+The agent is trained using the DDPG algorithm. To adapt the DDPG algorithm for this collaborative task please note the following:
+
+- each of the two agents uses the same actor network and receives its own local observation
+- the experience of each agent is added to a shared replay buffer from which mini-batches of experiences are sampled for training
+- the reward for both the agents is the maximum of the rewards collected by each of the agents, which signifies the maximum time the ball was in the air.
+
+It is for these reasons that the code can easily be adapted to simultaneously train both agents through self-play.
 
 ![Trained Agent][image1]
 
 The environment is a precompiled unity task which can be downloaded from :
 
 - Linux: [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P3/Tennis/Tennis_Linux.zip)
-    - Mac OSX: [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P3/Tennis/Tennis.app.zip)
-    - Windows (32-bit): [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P3/Tennis/Tennis_Windows_x86.zip)
-    - Windows (64-bit): [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P3/Tennis/Tennis_Windows_x86_64.zip)
+- Mac OSX: [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P3/Tennis/Tennis.app.zip)
+- Windows (32-bit): [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P3/Tennis/Tennis_Windows_x86.zip)
+- Windows (64-bit): [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P3/Tennis/Tennis_Windows_x86_64.zip)
 
 ### Rewards
 If an agent hits the ball over the net, it receives a reward of +0.1.  If an agent lets a ball hit the ground or hits the ball out of bounds, it receives a reward of -0.01.  Thus, the goal of each agent is to keep the ball in play.
@@ -52,5 +58,5 @@ Please follow the instructions in `ReportTennis.ipynb` to train the agent.
 - The DDPG agent is defined in Section 4.4 and trained in Section 4.5.
 
 ## Results
-- Using this implementation, the task was solved in just 961 episodes. The plot of rewards vs number of episodes is provided in Section 5.
-- The actor and critic model weights are provided as `DDPG_Actor.pth` and `DDPG_Critic.pth`. 
+- Using this implementation, the task was solved in just 614 episodes. The plot of rewards vs number of episodes is provided in Section 5.
+- The actor and critic model weights are provided as `DDPG_Actor_Tennis.pth` and `DDPG_Critic_tennis.pth`. 
