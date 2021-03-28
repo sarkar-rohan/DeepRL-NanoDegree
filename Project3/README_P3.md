@@ -7,6 +7,7 @@
 # Project 3: Collaboration and Competition
 
 ## Reinforcement Learning Environment
+![Trained Agent][image1]
 For this task we will be using the [Tennis](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Learning-Environment-Examples.md#tennis) environment which has two agents control rackets to bounce a ball over a net. The goal of the agent is to keep the ball in play for as long as possible.
 The agent is trained using the DDPG algorithm which can be adapted for this collaborative task because of the following:
 
@@ -16,7 +17,7 @@ The agent is trained using the DDPG algorithm which can be adapted for this coll
 
 It is for these reasons that the DDPG algorithm can easily be adapted to simultaneously train both agents through self-play.
 
-![Trained Agent][image1]
+
 
 The environment is a precompiled unity task which can be downloaded from :
 
