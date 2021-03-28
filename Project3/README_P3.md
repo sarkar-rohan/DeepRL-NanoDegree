@@ -44,7 +44,8 @@ The environment is considered solved, when the average (over 100 episodes) of th
 
 ## Setup 
 My code is run in the Udacity workspace. All the necessary requirements are installed by running the first cell in the jupyter notebook:
-!pip -q install ./python
+
+`!pip -q install ./python`
 
 Section `1. Starting the Environment`, installs all the dependencies and loads the necessary software libraries and modules. 
 For setting this up on a local machine, please follow the instructions at [click here](https://github.com/udacity/deep-reinforcement-learning)
