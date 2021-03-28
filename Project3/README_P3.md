@@ -59,4 +59,4 @@ Please follow the instructions in `ReportTennis.ipynb` to train the agent.
 
 ## Results
 - Using this implementation, the task was solved in just 614 episodes. The plot of rewards vs number of episodes is provided in Section 5.
-- The actor and critic model weights are provided as `DDPG_Actor_Tennis.pth` and `DDPG_Critic_tennis.pth`. 
+- The actor and critic model weights are provided as `DDPG_Tennis_Actor.pth` and `DDPG_tennis_Critic.pth`. 
